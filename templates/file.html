@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="list-group text-center">
+    <a class="list-group-item  list-group-item-action">
+        Code of file: <h4>{{file.spesificCode}}</h4>
+    </a>
+    <a class="list-group-item list-group-item-action">Description: <h5> {{file.description}}</h5></a>
+    <a class="list-group-item  list-group-item-action">Export Date: <h5> {{file.exportDate}}</h5></a>
+    <a class="list-group-item list-group-item-action ">Number of Views: <h5>{{file.counter}}</h5></a>
+    <a href="{{file.file.url}}" class="list-group-item bg-danger text-white  list-group-item-action ">Import <h5>{{file.file}}</h5></a>
+    <a class="list-group-item"><p>You can do also right click and 'save as' to download.</p></a>
+  
+</div>
+    
+
+{% endblock body %}

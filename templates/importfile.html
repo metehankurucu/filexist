@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+      
+      </div>
+      <div class="col-6">
+        <div class="container">
+            <form method="POST">
+                {% csrf_token %}
+                    <br>    
+                     <br>
+                                  <div class="input-group">
+                                  
+                                          <span class="input-group-text" id="">Code:</span>
+                                    <input class="form-control" name="code" placeholder="Enter your spesific code." aria-label="With textarea">
+                                  </div>
+                                      
+                                  
+                                     <hr>
+                                        <button type="submit" class="btn btn-primary btn-block">Import</button>
+                                      </form>
+                         </div>
+
+      </div>
+      <div class="col">
+      
+      </div>
+    </div>
+
+        
+
+{% endblock body %}

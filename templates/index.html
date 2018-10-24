@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block body %}
+
+       
+       
+  
+       
+  
+        <div class="jumbotron p-3 p-md-5 rounded bg-light text-center"> 
+            <h1 class=" text-center display-4 font-italic">Easily share file for everyone</h1>
+            <br>
+            <p class="mb-2 text-center">You can share file and document to small or large groups fast. Share or keep file with only one code.</p>
+              <p class="mb-1 text-center">And keep as long as you want or allow as many people as you want. </p>
+          
+            </div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="{% url 'importFile' %}" class="list-group-item list-group-item-action text-white text-center bg-danger">
+                
+                  <h4 class="mb-1 text-center">Import File</h4>
+                
+              
+                <p class="mb-1 text-center">Enter the code you have. Then you can access the everything of document.</p>
+                
+              </a>
+            </div>
+            <div class="col">
+              <a href="{% url 'exportFile' %}" class="list-group-item list-group-item-action text-dark text-center bg-light">
+                
+                  <h4 class="mb-1 text-center">Export File</h4>
+                
+                
+                <p class="mb-1 text-center">Choose file, set description and lifetime for file. Create code or will be created automatically to access.</p>
+                
+              </a>
+            </div>
+          </div>
+          <br>
+         
+        
+
+  
+            
+        
+{% endblock body %}

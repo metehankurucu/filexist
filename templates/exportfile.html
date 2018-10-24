@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    
+    <div class="col">
+    </div>
+    
+    <div class="col-7">
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="input-group mb-6">
+              <div class="input-group-prepend">
+                
+              </div>
+      
+            </div>
+                
+                    
+                    <div class="input-group">
+                     
+                                <div class="custom-file">
+                                  <div class="container">
+                                  <div class="row">
+                                    <div class="col">
+                                      
+                                    </div>
+                                    <div class="col">
+                                      <input type="file" name="file" required>
+                                    </div>
+                                    <div class="col">
+                                     
+                                    </div>
+                                  </div>
+                                </div>
+            
+                          </div>
+                          <br>
+                          <br>
+                  
+                    <br>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Description</span>
+                        </div>
+                        <input class="form-control" name="text" aria-label="With textarea"  placeholder="About your document. For example homework vs. " required>
+                      </div>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Code:</span>
+                          </div>
+                          <input class="form-control" name="code" placeholder="For others can download. Create or will created automatically" aria-label="With textarea">
+                        </div>
+                    
+                              
+                            </div>
+                            <div class="text-center alert-light-sm"><p>Lifetime</p></div>
+                            
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="tenmins">
+                                <label class="custom-control-label" for="customRadioInline1">10 mins</label>
+                              </div>
+                              
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value="oneday">
+                                <label class="custom-control-label" for="customRadioInline2">1 days</label>
+                              </div>
+                              
+                              <div class="custom-control custom-radio custom-control-inline">
+                                  <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input" value="tendays">
+                                  <label class="custom-control-label" for="customRadioInline3">10 days</label>
+                              </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input" value="tenviews">
+                                    <label class="custom-control-label" for="customRadioInline4">10 views</label>
+                                </div>
+                                  
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input" value="onehundredviews">
+                                      <label class="custom-control-label" for="customRadioInline5">100 views</label>
+                                  
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" id="customRadioInline6" name="customRadioInline1" class="custom-control-input" value="onekviews">
+                                      <label class="custom-control-label" for="customRadioInline6">1K views</label>
+                                  
+                                  </div>
+                                    <hr>
+                                <button type="submit" class="btn btn-danger btn-block">Export</button>
+                              </form>
+    </div>
+    
+    <div class="col">
+    </div>
+  </div>
+</div>
+
+
+        
+{% endblock body %}

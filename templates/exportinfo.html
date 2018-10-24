@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="list-group text-center">
+    <a class="list-group-item bg-primary text-white  list-group-item-action">
+        Your Code: <h3>{{file.spesificCode}}</h3>
+        <p>You can share it with others.</p>
+    </a>
+    <a class="list-group-item list-group-item-action">Description: <h5> {{file.description}}</h5></a>
+    <a class="list-group-item  list-group-item-action">Export Date: <h5> {{file.exportDate}}</h5></a>
+   </div>
+
+
+
+
+
+{% endblock body %}
